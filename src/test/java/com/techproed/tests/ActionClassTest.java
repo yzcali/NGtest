@@ -58,6 +58,30 @@ public class ActionClassTest extends Testbase {
         }
         actions.sendKeys(Keys.ARROW_UP).perform();
     }
+      @Test
+    public void GSWriting(){
+         driver.get("http://google.com");
+         WebElement searchB=driver.findElement(By.name("q"));
+         //searchB.sendKeys("merhaba"); bu standart yazma methodumuz
 
+          //searchB.sendKeys(Keys.SHIFT+"merhaba"); bu sekilde her harfi buyuk yazar
+
+          Actions actions = new Actions(driver);
+          actions.moveToElement(searchB).click()
+                  .keyDown(Keys.SHIFT)
+                  .sendKeys("merhaba")
+                  .keyUp(Keys.SHIFT)
+                  .sendKeys(" nasilsiniz")
+                  .perform();
+
+      }
+    @Test
+    public void Writing() {
+        driver.get("http://google.com");
+        WebElement searchB = driver.findElement(By.name("q"));
+        WebElement logo = driver.findElement(By.id("hplogo"));
+        Actions actions = new Actions(driver);
+        actions.dragAndDrop(logo, searchB).perform();
+    }
 
 }
