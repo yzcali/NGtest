@@ -27,7 +27,7 @@ public class OrnekHotelOlusturma extends Testbase {
         code.sendKeys("158962");
         WebElement name= driver.findElement(By.id("Name"));
         name.sendKeys("jack");
-        Thread.sleep(3000);
+
 
         WebElement add= driver.findElement(By.id("Address"));
         add.sendKeys("15Rue");
@@ -36,7 +36,7 @@ public class OrnekHotelOlusturma extends Testbase {
         WebElement phone= driver.findElement(By.id("Phone"));
         phone.sendKeys("0666060605");
 
-        Thread.sleep(3000);
+
         WebElement email= driver.findElement(By.id("Email"));
         email.sendKeys("jack@mail.com");
 
@@ -47,7 +47,7 @@ public class OrnekHotelOlusturma extends Testbase {
 
         driver.findElement(By.id("btnSubmit")).click();
 
-        WebDriverWait wait = new WebDriverWait(driver, 30) ;
+        WebDriverWait wait = new WebDriverWait(driver,10);
         WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='bootbox-body']")));
         System.out.println(message.getText());
 
