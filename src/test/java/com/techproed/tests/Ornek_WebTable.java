@@ -20,11 +20,12 @@ public class Ornek_WebTable extends Testbase {
     @Test
     public void test() throws InterruptedException {
        entry();
-       Thread.sleep(300);
+       Thread.sleep(3000);
+
        //tum satirlari bulduk satir sayisini yazdirdik .
         List<WebElement> titles = driver.findElements(By.xpath("//tbody/tr"));
-
         System.out.println(titles.size());
+
         //ucuncu satirdaki elemanlari bulduk.
         WebElement ucuncuSatir = driver.findElement(By.xpath("//tbody/tr[3]"));
         System.out.println(ucuncuSatir.getText());
