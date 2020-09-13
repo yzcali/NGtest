@@ -1,6 +1,5 @@
 package com.techproed.tests;
 
-import com.techproed.pages.AmazonPage;
 import com.techproed.pages.FhcTripHotelPage;
 import com.techproed.utilities.Testbase;
 import org.openqa.selenium.By;
