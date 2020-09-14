@@ -44,6 +44,8 @@ public class FhcTripHotelRoomCreateTest extends Testbase {
         Assert.assertTrue(basariliMi);
 
 
+        System.out.println(page);
+
 
 
 
