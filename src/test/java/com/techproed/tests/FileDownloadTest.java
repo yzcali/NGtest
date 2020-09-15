@@ -25,7 +25,7 @@ public class FileDownloadTest extends Testbase {
 
     }
     @Test
-    public void test01(){
+    public void fileUpload(){
         driver.get("http://the-internet.herokuapp.com/upload");
         // C:\Users\yzc\Desktop/logo.png
         WebElement chFile= driver.findElement(By.id("file-upload"));
@@ -48,20 +48,6 @@ public class FileDownloadTest extends Testbase {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
