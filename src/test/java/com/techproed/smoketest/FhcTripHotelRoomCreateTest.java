@@ -16,7 +16,7 @@ public class FhcTripHotelRoomCreateTest extends Testbase {
         driver.findElement(By.id("UserName")).sendKeys("manager2");
         driver.findElement(By.id("Password")).sendKeys("Man1ager2!" + Keys.ENTER);}
 
-    @Test
+    @Test (groups={"fhcTrip","hotelolusturma"})
     public void test01() throws InterruptedException {
         // ConfigurationReader class'ına diyoruzki, .properties dosyasının içerisindeki
         // room_create_url (anahtarının) değerini al.

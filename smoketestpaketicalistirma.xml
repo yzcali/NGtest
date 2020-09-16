@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite - smoketests paketi">
+    <test name="Test - smoketests paket testleri">
+
+        <packages>
+            <!-- buraya istediginiz kadar paket yazabilirsiniz   -->
+            <package name="com.techproed.smoketest"></package>
+        </packages>
+
+
+
+
+
+    </test>
+</suite>

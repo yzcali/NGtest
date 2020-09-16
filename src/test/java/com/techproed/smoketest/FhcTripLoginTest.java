@@ -8,7 +8,7 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 public class FhcTripLoginTest extends Testbase {
-    @Test
+    @Test( groups={"fhcTrip", "login"})
     public void girisTest() {
         driver.get(ConfigurationReader.getProperty("fhc_login"));
         FhcTripLoginPage loginPage = new FhcTripLoginPage(driver);

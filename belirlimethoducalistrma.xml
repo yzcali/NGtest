@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite - belirli methodlar">
+    <test name="Test - method test">
+        <classes>
+            <class name="com.techproed.tests.ActionClassTest">
+                <methods>
+                    <!-- Method eklemek için "include" -->
+                    <include name="doubleClick"></include>
+                    <include name="hoverOver"></include>
+                </methods>
+            </class>
+            
+            <class name="com.techproed.tests.WebTablesTest">
+                
+                <methods>
+                    <exclude name="bul"></exclude>
+                </methods>
+            </class>
+            
+            
+            
+            
+            
+        </classes>
+    </test>
+</suite>

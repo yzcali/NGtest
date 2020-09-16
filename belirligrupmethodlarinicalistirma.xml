@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_test_group">
+    <test name="group_fhcTrip_tests">
+        <groups>
+            <run>
+
+
+                <include name="fhctrip"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.techproed.smoketest.FhcTripHotelRoomCreateTest"></class>
+            <class name="com.techproed.smoketest.FhcTripLoginTest"></class>
+        </classes>
+
+        <!--  -->
+
+    </test>
+</suite>
